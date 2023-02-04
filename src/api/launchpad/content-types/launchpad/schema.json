@@ -1,0 +1,84 @@
+{
+  "kind": "collectionType",
+  "collectionName": "launchpads",
+  "info": {
+    "singularName": "launchpad",
+    "pluralName": "launchpads",
+    "displayName": "Launchpad",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hardcap": {
+      "type": "decimal"
+    },
+    "softcap": {
+      "type": "decimal"
+    },
+    "minContribution": {
+      "type": "decimal"
+    },
+    "maxContribution": {
+      "type": "decimal"
+    },
+    "verifiedAt": {
+      "type": "datetime"
+    },
+    "priceLaunch": {
+      "type": "decimal"
+    },
+    "priceOffering": {
+      "type": "decimal"
+    },
+    "launchDate": {
+      "type": "datetime"
+    },
+    "endDate": {
+      "type": "datetime"
+    },
+    "poolAddress": {
+      "type": "string"
+    },
+    "tokenInfo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::token-info.token-info"
+    },
+    "linkWhitepaper": {
+      "type": "string"
+    },
+    "linkWebsite": {
+      "type": "string"
+    },
+    "linkContract": {
+      "type": "string"
+    },
+    "linkDiscord": {
+      "type": "string"
+    },
+    "linkTelegram": {
+      "type": "string"
+    },
+    "linkTwitter": {
+      "type": "string"
+    },
+    "linkInstagram": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::currency.currency"
+    },
+    "txnRatio": {
+      "type": "integer"
+    },
+    "deployed": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

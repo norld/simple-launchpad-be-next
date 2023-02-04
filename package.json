@@ -1,0 +1,35 @@
+{
+  "name": "simple-launchpad-be-next",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/plugin-documentation": "^4.5.5",
+    "@strapi/plugin-i18n": "4.5.5",
+    "@strapi/plugin-users-permissions": "4.5.5",
+    "@strapi/strapi": "4.5.5",
+    "better-sqlite3": "7.4.6",
+    "ethers": "^5.7.2",
+    "moment": "^2.29.4",
+    "strapi-plugin-entity-relationship-chart": "^4.1.0",
+    "strapi-plugin-transformer": "^2.1.1"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "a7f96a36-6d72-4cec-82ca-4dc99527062e"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chains",
+  "info": {
+    "singularName": "chain",
+    "pluralName": "chains",
+    "displayName": "Chain",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "chainId": {
+      "type": "string",
+      "required": true,
+      "default": "1"
+    },
+    "chainName": {
+      "type": "string",
+      "required": true
+    },
+    "chainLogo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "chainBlockexplorer": {
+      "type": "string"
+    },
+    "chainRPC": {
+      "type": "string"
+    },
+    "chainConfirmationBlock": {
+      "type": "integer"
+    }
+  }
+}

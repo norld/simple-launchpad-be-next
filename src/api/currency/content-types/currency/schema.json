@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "currencies",
+  "info": {
+    "singularName": "currency",
+    "pluralName": "currencies",
+    "displayName": "Currency"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "currencySymbol": {
+      "type": "string"
+    },
+    "currencyAddress": {
+      "type": "string"
+    },
+    "currencyDecimal": {
+      "type": "string"
+    },
+    "currencyLogo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

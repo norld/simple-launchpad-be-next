@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "token_infos",
+  "info": {
+    "singularName": "token-info",
+    "pluralName": "token-infos",
+    "displayName": "Token Info",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tokenAddress": {
+      "type": "string",
+      "required": true
+    },
+    "tokenSymbol": {
+      "type": "string"
+    },
+    "tokenDecimal": {
+      "type": "integer"
+    },
+    "tokenTotalSupply": {
+      "type": "decimal"
+    },
+    "tokenName": {
+      "type": "string"
+    },
+    "tokenDescription": {
+      "type": "richtext"
+    },
+    "tokenLink": {
+      "type": "string"
+    },
+    "tokenForPresale": {
+      "type": "string"
+    },
+    "tokenForLiquidity": {
+      "type": "string"
+    },
+    "tokenLogo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "chain": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::chain.chain"
+    }
+  }
+}
