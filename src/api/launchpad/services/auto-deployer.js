@@ -38,21 +38,9 @@ module.exports = ({ strapi }) => ({
       console.log("Current block timestamp", currentBlockTimestamp);
       const startTime = Math.floor(moment(launchpadData.launchDate).unix()); //inputan
       const endTime = Math.floor(moment(launchpadData.endDate).unix()); //inputan
-      const diffStartDate = parseInt(
-        (startTime - moment(parseInt(currentBlockTimestamp) * 1000).unix()) /
-          launchpadData.tokenInfo.chain.chainConfirmationBlock
-      );
-      const diffEndDate = parseInt(
-        (endTime - moment(parseInt(currentBlockTimestamp) * 1000).unix()) /
-          launchpadData.tokenInfo.chain.chainConfirmationBlock
-      );
-      const targetStartBlock = diffStartDate + currentBlock;
-      const targetEndBlock = diffEndDate + currentBlock;
-
-      console.log("@block", targetStartBlock, targetEndBlock);
       const param = [
-        targetStartBlock,
-        targetEndBlock - targetStartBlock,
+        startTime,
+        endTime - startTime,
         launchpadData.tokenInfo.tokenForPresale,
         launchpadData.tokenInfo.tokenAddress,
         launchpadData.currency.currencyAddress,
@@ -81,8 +69,8 @@ module.exports = ({ strapi }) => ({
         data: {
           poolAddress: getLaunchpadAddressByIndex,
           linkContract:
-            launchpadData.tokenInfo.chain.chainRPC +
-            "/address/" +
+            launchpadData.tokenInfo.chain.chainBlockexplorer +
+            "address/" +
             getLaunchpadAddressByIndex,
           deployed: true,
         },
