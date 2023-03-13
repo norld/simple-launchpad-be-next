@@ -17,28 +17,36 @@
       "required": true
     },
     "tokenSymbol": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "tokenDecimal": {
-      "type": "integer"
+      "type": "integer",
+      "required": true,
+      "default": 18
     },
     "tokenTotalSupply": {
-      "type": "decimal"
+      "type": "decimal",
+      "required": true
     },
     "tokenName": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "tokenDescription": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "tokenLink": {
       "type": "string"
     },
     "tokenForPresale": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "tokenForLiquidity": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "tokenLogo": {
       "type": "media",
