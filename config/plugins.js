@@ -17,9 +17,9 @@ module.exports = ({ env }) => ({
         apiKey: env("SENDGRID_API_KEY"),
       },
       settings: {
-        defaultFrom: "grymore@grymore.xyz",
-        defaultReplyTo: "grymore@grymore.xyz",
-        testAddress: "grymore@grymore.xyz",
+        defaultFrom: "grymore@gmail.com",
+        defaultReplyTo: "grymore@gmail.com",
+        testAddress: "grymore@gmail.com",
       },
     },
   },
