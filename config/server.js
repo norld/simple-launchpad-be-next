@@ -9,4 +9,5 @@ module.exports = ({ env }) => ({
       Authorization: `Bearer ${process.env.WEBHOOK_TOKEN}`,
     },
   },
+  url: env("APP_URL"),
 });
