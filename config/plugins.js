@@ -10,6 +10,19 @@ module.exports = ({ env }) => ({
       },
     },
   },
+  email: {
+    config: {
+      provider: "sendgrid", // For community providers pass the full package name (e.g. provider: 'strapi-provider-email-mandrill')
+      providerOptions: {
+        apiKey: env("SENDGRID_API_KEY"),
+      },
+      settings: {
+        defaultFrom: "grymore@grymore.xyz",
+        defaultReplyTo: "grymore@grymore.xyz",
+        testAddress: "grymore@grymore.xyz",
+      },
+    },
+  },
   // "entity-relationship-chart": {
   //   enabled: true,
   //   config: {
